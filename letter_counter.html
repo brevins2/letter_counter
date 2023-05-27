@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>letter counter</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+
+    <body>
+        <div class="outer_div">
+            <nav class="header">
+                <input type="text" class="text" required/>
+                <button type="submit" class="btn" onclick="letter_counter()"> Send </button>
+            </nav>
+
+            <div class="result_div">
+                <div id="data"></div>
+                <h5>Results:</h5>
+                <table>
+                    <tr>
+                        <th>Letter</th>
+                        <th>Appearance</th>
+                    </tr>
+                    <tbody>
+                        <tr>
+                            <td id="letter"></td>
+                            <td id="appear"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <script src="./letter_counter.js"></script>
+    </body>
+</html>
